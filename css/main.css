@@ -299,7 +299,7 @@ ul.sub-menu {
 }
 
 .dropdown ul.sub-menu li .active{
-  color: #FDB45E;
+  color: #7dc4ff;
   padding-left: 0;
 }
 
@@ -317,7 +317,7 @@ ul.sub-menu {
 }
 
 .navbar-nav li ul.sub-menu li a:hover{
-    color: #FDB45E;
+    color: #7dc4ff;
 }
 
 .fa-angle-down{
@@ -908,11 +908,6 @@ h2.title {
   width: 100%;
   display: block;
   opacity:;
-}
-
-.single-products:hover .product-overlay {
-  display:block;
-  height:100%;
 }
 
 
