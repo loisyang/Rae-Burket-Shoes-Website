@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rae Burcket Shoes</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!--Rae Logo-->
+    <center>
+    <h1><img src = "data/RaeLogo.png"</img></h1>
+    </center>
+
+    <script type = "text/javascript">1
+
+      function redirect(){
+        if (docCookies.getItem('lang') == "ENGLISH") window.location = "index.html";
+        if (docCookies.getItem('lang') == "SPANISH") window.location = "index.html";
+      }
+
+    </script>
+
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="center">
+      
+        <!--BEGIN THE DROPDOWN-->
+        <div class="btn-group">
+          <button class="btn btn-default btn-lg dropdown-toggle" type="button" id="countrySelect" data-toggle="dropdown">
+            Select Language
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" onclick="docCookies.setItem('lang', 'ENGLISH');">English</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" onclick="docCookies.setItem('lang', 'SPANISH');">Español</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" onclick="docCookies.setItem('lang', 'FRENCH');">Français</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" onclick="docCookies.setItem('lang', '');">Deutsch</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" onclick="docCookies.setItem('lang', '');">Italiano</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" onclick="docCookies.setItem('lang', '');">中文</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" onclick="docCookies.setItem('lang', '');">日本語</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" onclick="docCookies.setItem('lang', '');">한국어</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" onclick="docCookies.setItem('lang', '');">العربية</a></li>
+          </ul>
+            <!--<button type="button" class="btn btn-default btn-lg">GO</button>-->
+        </div>
+        <!--DROPDOWN END-->
+
+      </div>
+
+    </div>
+    <!--Mozilla Cookie API-->
+    <script src="js/cookies.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  <body onload="redirect();">
+  </body>
+</html>
